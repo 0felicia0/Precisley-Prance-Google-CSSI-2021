@@ -1,0 +1,40 @@
+canvas {
+  border: 1px solid #000;
+  margin: 0;
+  /* background-image: url("purpleSplatter.jpg"); */
+}
+
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+
+.title {
+  font-family: neon;
+  color: rgb(250, 250, 250);
+  text-align: center;
+  left: 25%;
+  font-size: 7vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw rgb(214, 69, 195);
+}
+
+.title {
+  animation: title 2s linear infinite;
+  -moz-animation: title 2s linear infinite;
+  -webkit-animation: title 2s linear infinite;
+  -o-animation: title 2s linear infinite;
+}
+
+@keyframes title {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw rgb(245, 46, 218), 0 0 3vw rgb(243, 46, 227), 0 0 10vw rgb(187, 98, 182), 0 0 10vw rgb(204, 104, 207), 0 0 .4vw rgb(207, 161, 197), .5vw .5vw .1vw #afa1aa;
+    color: rgb(238, 227, 238);
+  }
+  50% {
+    text-shadow: 0 0 .5vw #bb6acf, 0 0 1.5vw #9b1fb4, 0 0 5vw #571c6e, 0 0 5vw #9a979b, 0 0 .2vw #a28faa, .5vw .5vw .1vw rgb(56, 10, 75);
+    color: rgb(124, 20, 128);
+  }
+}
